@@ -65,7 +65,8 @@ jobs:
           src-git ssrp https://github.com/fw876/helloworld.git          
           src-git lienol https://github.com/Lienol/openwrt-packages.git
           EOF
-          
+
+          rm -rf feeds/lienol/net/xray-core
           rm -rf feeds/luci/applications/luci-app-cifs-mount
           rm -rf feeds/luci/themes/luci-theme-argon
           
