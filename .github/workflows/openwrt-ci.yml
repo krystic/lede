@@ -61,9 +61,9 @@ jobs:
       - name: Update feeds
         run: |
           cat >> feeds.conf.default <<EOF
-          src-git lienol https://github.com/Lienol/openwrt-packages.git
-          src-git ssrp https://github.com/fw876/helloworld.git
           src-git krystic https://github.com/krystic/package-self.git
+          src-git ssrp https://github.com/fw876/helloworld.git          
+          src-git lienol https://github.com/Lienol/openwrt-packages.git
           EOF
           
           rm -rf feeds/luci/applications/luci-app-cifs-mount
